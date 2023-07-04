@@ -3,16 +3,23 @@ import { useNavigate } from "react-router-dom";
 import { useSelector } from "react-redux";
 import "./style.scss";
 
+//import custom hook to fetch data from API
 import useFetch from "../../../hooks/useFetch";
 
+//Img is Lazy loading component we will put our background images in this component
 import Img from "../../../components/lazyLoadImage/Img";
+// This keeps the whole page in center with some spaces on the side.
 import ContentWrapper from "../../../components/contentWrapper/ContentWrapper";
 
 const HeroBanner = () => {
   const [background, setBackground] = useState("");
   const [query, setQuery] = useState("");
+
+  // Instance of navigate.
   const navigate = useNavigate();
   const { url } = useSelector((state) => state.home);
+
+  // This sets url for the custom hook useFetch
   const { data, loading } = useFetch("/movie/upcoming");
 
   useEffect(() => {
