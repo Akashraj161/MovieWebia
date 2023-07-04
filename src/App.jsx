@@ -62,8 +62,11 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
+        {/* mediaType means movie or tv show */}
         <Route path="/:mediaType/:id" element={<Details />} />
+        {/* Whatever we have searched will come under query */}
         <Route path="/search/:query" element={<SearchResult />} />
+        {/* from home page when we click on movie or tv show it opens explore page */}
         <Route path="/explore/:mediaType" element={<Explore />} />
         <Route path="*" element={<PageNotFound />} />
       </Routes>
