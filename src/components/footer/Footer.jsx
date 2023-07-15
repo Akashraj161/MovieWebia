@@ -20,28 +20,43 @@ const Footer = () => {
           <li className="menuItem">About</li>
           <li className="menuItem">Blog</li>
           <li className="menuItem">FAQ</li>
+          <li className="menuItem">
+            <a href="https://fast.com"> Speed Test</a>
+          </li>
+          <li className="menuItem">Account</li>
+          <li className="menuItem">Cookie Preferences</li>
+          <li className="menuItem">Contact Us</li>
         </ul>
-        <div className="infoText">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur.
-        </div>
         <div className="socialIcons">
-          <span className="icon">
-            <FaFacebookF />
-          </span>
-          <span className="icon">
-            <FaInstagram />
-          </span>
-          <span className="icon">
-            <FaTwitter />
-          </span>
-          <span className="icon">
-            <FaLinkedin />
-          </span>
+          <a
+            className="colorwhite"
+            href="https://www.facebook.com/akkiraj1611"
+          >
+            <span className="icon">
+              <FaFacebookF />
+            </span>
+          </a>
+          <a
+            className="colorwhite"
+            href="https://www.instagram.com/akash_r.a.j/"
+          >
+            <span className="icon">
+              <FaInstagram />
+            </span>
+          </a>
+          <a className="colorwhite" href="https://twitter.com/rajakki11">
+            <span className="icon">
+              <FaTwitter />
+            </span>
+          </a>
+          <a
+            className="colorwhite"
+            href="https://www.linkedin.com/in/akash-ar161/"
+          >
+            <span className="icon">
+              <FaLinkedin />
+            </span>
+          </a>
         </div>
       </ContentWrapper>
     </footer>
